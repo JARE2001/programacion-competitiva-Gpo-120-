@@ -1,1 +1,1 @@
-# programaci-n-competitiva-Gpo-120-
+# programacion-competitiva-Gpo-120-
