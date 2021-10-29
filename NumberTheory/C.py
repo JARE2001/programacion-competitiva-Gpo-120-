@@ -1,24 +1,20 @@
-
-
-def gcd(a,b):
-    if b == 0:
-        return a
-    return gcd(b, a % b)
-
-
+#jorge alan ramirez A01701350
 def findXY(a,b,c):
-    x,y = 1*(10**(a-1)),1*(10**(b-1))
+    g=10**(c-1)
+    
+    x,y =g,g
+
+    nA =10**(a-1)
+    nB =10**(b-1)
+
+    while(x<nA):
+        x*=2
+    while(y<nB):
+        y*=3
+    print(x,y)
   
-   
-    currGCD= gcd(x,y)
-    while len(str(currGCD))!= c:
-        if(len(str(currGCD))<c):
-            pass
-        if(len(str(currGCD))>c):
-            a
-
-    
-    
-
-digits =[0,1,2,3,4,5,6,7,8,9]
-findXY(2,3,1)
+tests = int(input())
+while tests:
+    temp = input().split()
+    findXY(int(temp[0]),int(temp[1]),int(temp[2]))
+    tests-=1
